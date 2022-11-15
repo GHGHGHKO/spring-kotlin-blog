@@ -19,7 +19,7 @@ internal class HelloControllerTest(
 ) {
 
     @Test
-    fun helloKotlin() {
+    fun `hello Kotlin`() {
 
         mockMvc.perform(get("/hello/{language}", "kotlin"))
                 .andExpect(status().isOk)
